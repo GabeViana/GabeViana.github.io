@@ -7,7 +7,7 @@ const certificados = [
     {
         nome: "Power BI",
         curso: "Introdução à Análise de Dados",
-        instituicao: "Centro Educacional Comunitário",
+        instituicao: "Fundação Bradesco | Escola Virtual",
         ano: "2026",
         arquivo: "power-bi"
     },

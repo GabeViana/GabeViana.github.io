@@ -1,0 +1,404 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f6f8;
+
+    color: #222;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 55px 30px;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.cabecalho {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.titulo-pequeno {
+    margin: 0 0 10px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+.cabecalho h1 {
+    margin: 0;
+
+    font-size: 36px;
+
+    font-weight: 700;
+}
+
+.subtitulo {
+    margin: 8px 0 0;
+
+    font-size: 21px;
+
+    color: #444;
+}
+
+.descricao {
+    max-width: 600px;
+
+    margin: 15px auto 0;
+
+    color: #777;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* ========================================
+   GRUPOS POR ANO
+======================================== */
+
+.grupo-ano {
+    margin-bottom: 45px;
+}
+
+.titulo-ano {
+    margin: 0 0 20px;
+
+    font-size: 23px;
+
+    font-weight: 600;
+
+    color: #222;
+
+    padding-left: 10px;
+
+    border-left: 4px solid #222;
+}
+
+
+/* ========================================
+   GRADE DOS CERTIFICADOS
+======================================== */
+
+.grade-certificados {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ========================================
+   CARD DO CERTIFICADO
+======================================== */
+
+.certificado {
+    background-color: white;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    border: 1px solid #e5e5e5;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.certificado:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ========================================
+   IMAGEM DO CERTIFICADO
+======================================== */
+
+.imagem-certificado {
+    width: 100%;
+
+    height: 220px;
+
+    background-color: #f1f1f1;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.imagem-certificado img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 6px;
+}
+
+
+/* ========================================
+   INFORMAÇÕES DO CERTIFICADO
+======================================== */
+
+.certificado h2 {
+    margin: 14px 0 5px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+.certificado p {
+    margin: 0 0 7px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+.certificado small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* ========================================
+   MODAL
+======================================== */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color:
+        rgba(0, 0, 0, 0.75);
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 1000;
+
+    padding: 20px;
+}
+
+.modal.ativo {
+    display: flex;
+}
+
+
+/* ========================================
+   CONTEÚDO DO MODAL
+======================================== */
+
+.modal-conteudo {
+    position: relative;
+
+    width: 80%;
+
+    max-width: 1100px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+}
+
+
+/* ========================================
+   BOTÃO FECHAR
+======================================== */
+
+.fechar {
+    position: absolute;
+
+    top: 10px;
+
+    right: 18px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #333;
+
+    z-index: 10;
+}
+
+
+/* ========================================
+   CERTIFICADO AMPLIADO
+======================================== */
+
+.certificado-ampliado {
+    width: 100%;
+
+    height: 70vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.certificado-ampliado img {
+    max-width: 100%;
+
+    max-height: 70vh;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* ========================================
+   BOTÃO PDF
+======================================== */
+
+.botao-pdf {
+    display: block;
+
+    width: fit-content;
+
+    margin: 15px auto 0;
+
+    padding: 10px 18px;
+
+    background-color: #222;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    transition: background-color 0.2s;
+}
+
+.botao-pdf:hover {
+    background-color: #444;
+}
+
+
+/* ========================================
+   CELULAR
+======================================== */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding: 35px 20px;
+    }
+
+
+    .cabecalho h1 {
+        font-size: 30px;
+    }
+
+
+    .grade-certificados {
+        grid-template-columns: 1fr;
+    }
+
+
+    .titulo-ano {
+        font-size: 21px;
+    }
+
+
+    .modal {
+        padding: 15px;
+    }
+
+
+    .modal-conteudo {
+        width: 100%;
+
+        padding: 15px;
+    }
+
+
+    .certificado-ampliado {
+        height: 80vh;
+    }
+
+
+    .certificado-ampliado img {
+        max-width: 95%;
+
+        max-height: 75vh;
+    }
+
+}
